@@ -1,0 +1,105 @@
+* { margin: 0; padding: 0; user-select: none; }
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.mine {
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(./mine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3px;
+}
+.bullet {
+    position: absolute;
+    border-radius: 3px;
+    transition: all .1s linear 0s;
+}
+.enemy {
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(./enemy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3px;
+    transition: all .1s linear 0s;
+}
+.gameover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    background-color: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 5px #999;
+    text-align: center;
+}
+.gameover .title {
+    background-color: brown;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.gameover .score {
+    font-size: 60px;
+    color: #0000ae;
+    font-family: monospace;
+    margin-top: 30px;
+}
+.gameover .time {
+    margin-top: 40px;
+    font-size: 30px;
+}
+.gameover .resetGame {
+    width: 50%;
+    height: 40px;
+    margin-top: 80px;
+    cursor: pointer;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    box-shadow: 0 0 5px #787878;
+}
+.gameover .resetGame:active {
+    background-color: #ffb938;
+}
+.scores {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #0000ae;
+}
+.begin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffa500;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0 0 5px #787878;
+}
+.begin:active {
+    background-color: #ffb938;
+}
